@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" ;
+    name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {background-image: url('background.jpg');}
+</style>
+</head>
+<body>
+    <nav>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Introduction</a></li>
+         <li class="dropdown">
+          <a href="page3.html" class="dropbtn">Recommended Materials</a>
+             <div class="dropdown-content">
+                <a href="page3.html#C31">Brush Pens</a>
+                <a href="page3.html#C32">Paper</a>
+                </div>
+            </li>
+        <li class="dropdown">
+          <a href="page4.html" class="dropbtn">Guided Tutorial</a>
+             <div class="dropdown-content">
+                <a href="page4.html#C41">Practicing</a>
+                <a href="page4.html#C42">Video Resources</a>
+                <a href="page4.html#C43">Additional Resources</a>
+                </div>
+            </li>
+         <li class="dropdown">
+          <a href="page5.html" class="dropbtn">Additional Tips</a>
+             <div class="dropdown-content">
+                <a href="page5.html#C51">Useful Applications of Brush Calligraphy</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <h1 id="#C0"> Brush Calligraphy</h1>
+
+    <p style="margin-left: 50px;margin-right: 50px"> Are you interested to learn more about the art of brush calligraphy? Go through this website to learn more about how to get started in the special art of brush calligraphy! The picture frame belows shows examples of how Brush Calligraphy can be used to create amazing art pieces. </p>
+
+    <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="introduction1.jpg" style="width:100%">
+    <div class="text">The Art of Brush Calligraphy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="introduction2.jpg" style="width:100%">
+    <div class="text">Beautiful Drawings using Brush Calligraphy</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="introduction3.jpg" style="width:100%">
+    <div class="text">Letters drawn using Brush Calligraphy</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <br>
+ <div class="center" style="
+  box-sizing: border-box;
+  background-color: #D4F1F9;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #80C5DE;
+  padding: 10px;">
+  <p id="C0"> <b>Summary of Website Content:</b></a></p>
+    <p> 1)<a href="page2.html">Introduction</a><br><br>
+      2)<a href="page3.html">Recommended Materials</a> <br>
+      - <a href="page3.html#C31"> Brush Pens</a> <br>
+      - <a href="page3.html#C32"> Paper to Use </a> <br><br>
+      3)<a href="page4.html">Guided Tutorial</a><br>
+     - <a href="page4.html#C41"> Practicing </a> <br>
+     - <a href="page4.html#C42"> Video Resources </a><br>
+     - <a href="page4.html#C43"> Additional Resources </a> <br><Br>
+     4)<a href="page5.html">Additional Tips</a><br>
+     - <a href="page5.html#C51"> Useful Applications of Brush Calligraphy </a></p></div>
+    <hr>
+
+    <h1>Enquries</h1>
+    <p>
+        If you have any questions, do reach out to the author via email and he will be happy to reply to your questions! <br><a href="mailto:alexlimtzeming@gmail.com?subject=I Have Questions Regarding Brush Calligraphy">Click here to drop me an email!!!</a>
+    </p>
+
+    <hr>
+    <div align="center"><a href="page2.html"> Click here to move on to the next page for an introduction on the art of Brush Calligraphy!</a> <br><br></div>
+</body>
+</html>
